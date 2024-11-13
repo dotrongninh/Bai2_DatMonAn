@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE563"
+    tools:context=".FrmMP">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Món Phụ"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Danh sách các món ăn dưới dạng CheckBox -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxNemRan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nem rán" />
+
+        <CheckBox
+            android:id="@+id/checkBoxChaGio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chả giò" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBanhCuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bánh cuốn" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Nút Tiếp theo -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiếp theo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
